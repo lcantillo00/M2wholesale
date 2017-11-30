@@ -44,36 +44,7 @@
             <?php $countryList=$block->getCountries();?>
             <label class="label" for="name"><span><?= $block->escapeHtml(__('Country')) ?></span></label>
             <div class="control" id="country">
-               <span id="country" value="country" name="country" class="country"><?php echo $countryList?></span>
-
-<!--                <select name="country" id="country" class="required-entry"></select>-->
-<!--                    <option value="">--><?php //echo $block->escapeHtml(__('Select'))  ?><!--</option>-->
-<!--                    --><?php //$countryList = $block->getCountries(); ?>
-<!--                    --><?php //foreach ($countryList as $country):?>
-<!--                        <option value="">--><?php //echo $country['value']; ?><!--</option>-->
-<!--                    --><?php //endforeach; ?>
-<!--                </select>-->
-<!--                <input name="country" id="country" title="--><?//= $block->escapeHtmlAttr(__('Country')) ?><!--" value="--><?//= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('name') ?: $this->helper('Magento\Contact\Helper\Data')->getUserName()) ?><!--" class="input-text" type="text" data-validate="{required:true}"/>-->
-            </div>
-        </div>
-
-<!--        <div class="field country">-->
-<!--            <label class="label" for="region"><span>--><?php // echo __('Region') ?><!--</span></label>-->
-<!--            --><?php //$regionList=$block->getRegion();?>
-<!--            <div class="control">-->
-<!--                --><?php //echo $regionList?>
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div>-->
-<!---->
-<!--            <select name="countries">-->
-<!--                <option class="placeholder" value="" >Country</option>-->
-<!--                --><?php //$countries = $block->getAvailableCountries();?>
-<!--               --><?php //foreach ($countries as $country) : ?>
-<!--                <option value="--><?php //echo $country->getCountryId(); ?><!--">--><?php //echo $country->getName(); ?><!--</option>-->
-<!--                --><?php //endforeach;?>
-<!--            </select>-->
-<!--        </div>-->
+               <span id="country" value="country" name="country_id" class="country"><?php echo $countryList?></span>
 
 
         <div class="field product required">
